@@ -50,8 +50,8 @@ export default function Index() {
         style={{ borderWidth: 1, width: 100 }}
       />
       <View style={{ flexDirection: 'row'}}>
-        { counter > 0 && <Button onPress={dosomeminus}  title="-" /> }
-        { counter < 10 && <Button onPress={dosomeplus}  title="+" /> }
+        { counter > 0 && <Button onPress={dosomeminus}  title="MINUS" /> }
+        { counter < 10 && <Button onPress={dosomeplus}  title="PLUS" /> }
       </View>
       { counter > 0 && <Button onPress={ () => { setCounter(0); } } title="Återställ" /> }
 
