@@ -53,7 +53,7 @@ export default function Index() {
         { counter > 0 && <Button onPress={dosomeminus}  title="-" /> }
         { counter < 10 && <Button onPress={dosomeplus}  title="+" /> }
       </View>
-      <Button onPress={ () => { setCounter(0); } } title="Återställ" />
+      { counter > 0 && <Button onPress={ () => { setCounter(0); } } title="Återställ" /> }
 
 
 
